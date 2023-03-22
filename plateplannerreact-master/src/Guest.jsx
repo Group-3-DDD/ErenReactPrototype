@@ -14,7 +14,7 @@ export const Guest =(props) =>{
         
         <img src={accountlogo} alt="account-logo" className="account-logo" />
       
-        <label htmlFor="name">Full Name </label>
+        <label htmlFor="guest">Full Name </label>
             <input Text={Text}name="name" placeholder="Full Name" id="name" />
             <button>Continue</button>
         </form>
