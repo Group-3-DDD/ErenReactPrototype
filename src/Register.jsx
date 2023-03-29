@@ -23,7 +23,7 @@ return(
             <input type ="email" placeholder="youremail@email.com" id="email" name="email"/>
             <label htmlfor="password">Password </label>
             <input type ="password" placeholder="password" id="password" name="password"/>
-            <button>Sign In</button>
+            <button className="signinbutton">Sign In</button>
             <button className="account" onClick={()=>props.onFormSwitch('login')}>Already have an account?</button>
             <button className="guest" onClick={()=>props.onFormSwitch('guest')}>Continue as a Guest?</button>
         </form>

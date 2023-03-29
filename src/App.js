@@ -2,9 +2,10 @@ import React,{useState} from 'react';
 import './App.css';
 import {Login} from "./Login";
 import {Register} from "./Register"
-import { Guest } from './Guest';
+import {Guest} from './Guest';
 import logo from './logo transparent.png';
-import {Profile} from './Profile';
+import {Mainpage} from './Mainpage';
+
 
 function App() {
   const[currentForm, setCurrentForm] = useState('login');
@@ -15,6 +16,7 @@ function App() {
   return (
     
     <div className="App">
+      
       <img src={logo} alt="logo transparent" className="logo transparent" />
       {currentForm === "login" ? (
   <Login onFormSwitch={toggleForm} />

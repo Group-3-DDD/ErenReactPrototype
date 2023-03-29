@@ -16,7 +16,7 @@ export const Guest =(props) =>{
       
         <label htmlFor="guest">Full Name </label>
             <input Text={Text}name="name" placeholder="Full Name" id="name" />
-            <button>Continue</button>
+            <button className="continuebutton">Continue</button>
         </form>
         </>
         
