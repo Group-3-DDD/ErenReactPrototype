@@ -1,7 +1,8 @@
 .App 
 {
   max-width: 100%;
-  background-color: #06aaff;
+  background: linear-gradient(to top, #b6e7ff, #06aaff);
+  
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
