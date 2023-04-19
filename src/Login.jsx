@@ -20,7 +20,7 @@ export const Login =(props) =>{
             <input type ="email" placeholder="youremail@email.com" id="email" name="email"/>
             <label htamlfor="password">Password </label>
             <input type ="password" placeholder="password" id="password" name="password"/>
-            <button className="loginbutton" onClick={()=>props.onFormSwitch('mainpage')}>Log In</button>
+            <button className="loginbutton" onClick={()=> {window.location.href='/mainpage'}}>Login</button>
             <button className="no-account" onClick={()=>props.onFormSwitch('register')}>Dont have an account?</button>
             <button className="guest" onClick={()=>props.onFormSwitch('guest')}>Continue as a Guest?</button>
         </form>
