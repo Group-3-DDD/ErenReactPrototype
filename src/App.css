@@ -99,14 +99,14 @@
 }
 .loginbutton, .continuebutton, .signinbutton
 {
-    color: white; /* set text color to white */
-    background-color: #06aaff; /* set background color to blue */
-    font-family: Arial, sans-serif; /* set font family */
-    font-size: 16px; /* set font size */
-    font-weight: bold; /* set font weight to bold */
-    border: none; /* remove border */
-    border-radius: 5px; /* add rounded corners */
-    padding: 10px 20px; /* add padding */
+    color: white; 
+    background-color: #06aaff; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
 }
   

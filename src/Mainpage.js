@@ -4,27 +4,21 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomeCooked from './HomeCooked';
 import Takeaway from './Takeaway';
 
-function App() {
+function Mainpage() {
   return (
-    <Router>
-      <div className="App">
-        <div className="banner">
-          
-        </div>
-        <Routes>
-          <Route path="/" element={
-            <div className="button-container">
-              <button className="button" onClick={() => {window.location.href='/takeaways'}}>Takeaways</button>
-              <button className="button" onClick={() => {window.location.href='/homecooked'}}>Home Cooked</button>
-
-            </div>
-          } />
-          <Route path="/homecooked" element={<HomeCooked />} />
-          <Route path="/takeaways" element={<Takeaway />} />
-        </Routes>
+    <div className="App">
+      <div className="banner"></div>
+      <Routes>
+        <Route path="/homecooked" element={<HomeCooked />} />
+        <Route path="/takeaways" element={<Takeaway />} />
+      </Routes>
+      <div className="button-container">
+        <Link to="/takeaways" className="button">Takeaways</Link>
+        <Link to="/homecooked" className="button">Home Cooked</Link>
       </div>
-    </Router>
+      
+    </div>
   );
 }
 
-export default App;
+export default Mainpage;

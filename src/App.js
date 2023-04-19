@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useHistory } from 'react-router-dom';
 import './App.css';
 import { Login } from './Login';
 import { Register } from './Register';
@@ -10,17 +10,18 @@ import Mainpage from './Mainpage';
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
 
-  const toggleForm = (formName) => {
+  const toggleForm = (formName, history) => {
     setCurrentForm(formName);
+    
   };
 
   return (
     <Router>
       <div className="App">
         <img src={logo} alt="logo transparent" className="logo transparent" />
-        <Switch>
-          <Route exact path="/">
-            {currentForm === 'login' ? (
+        <Routes>
+          <Route exact path="/" element={
+            currentForm === 'login' ? (
               <Login onFormSwitch={toggleForm} />
             ) : currentForm === 'register' ? (
               <Register onFormSwitch={toggleForm} />
@@ -28,10 +29,10 @@ function App() {
               <Guest onFormSwitch={toggleForm} />
             ) : (
               null
-            )}
-          </Route>
-          <Route path="/mainpage" component={Mainpage} />
-        </Switch>
+            )
+          } />
+          <Route path="/mainpage" element={<Mainpage />} />
+        </Routes>
       </div>
     </Router>
   );

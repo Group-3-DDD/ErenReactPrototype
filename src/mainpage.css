@@ -5,18 +5,6 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.banner {
-  height: 200px;
-  background-color: lightblue;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner img {
-  height: 150px;
-}
-
 .button-container {
   margin-top: 150px;
   display: flex;
