@@ -1,30 +1,58 @@
-import React,{useState} from "react"
-import accountlogo from './accountlogo.png';
+import React, { useState } from "react";
+import accountlogo from "./accountlogo.png";
 
-export const Login =(props) =>{
-    const [email, setEmail] = useState(' ');
-    const [pass, setPass] = useState(' ');
+export const Login = (props) => {
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
 
-    const handleSubmit =(e) => {
-        e.preventDeafut();
-        console.log(email);
-    }
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email);
+    window.location.reload();
+  };
 
-    return(
-        <>
-        <form className="login-form" onSubmit={handleSubmit}>
+  return (
+    <>
+      <form className="login-form" onSubmit={handleSubmit}>
         
         <img src={accountlogo} alt="account-logo" className="account-logo" />
-      
-            <label htmalfor="email">Email </label>
-            <input type ="email" placeholder="youremail@email.com" id="email" name="email"/>
-            <label htamlfor="password">Password </label>
-            <input type ="password" placeholder="password" id="password" name="password"/>
-            <button className="loginbutton" onClick={()=> {window.location.href='/mainpage'}}>Login</button>
-            <button className="no-account" onClick={()=>props.onFormSwitch('register')}>Dont have an account?</button>
-            <button className="guest" onClick={()=>props.onFormSwitch('guest')}>Continue as a Guest?</button>
-        </form>
-        </>
-        
-    )
-}
+
+        <label htmlFor="email">Email </label>
+        <input
+          type="email"
+          placeholder="youremail@email.com"
+          id="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <label htmlFor="password">Password </label>
+        <input
+          type="password"
+          placeholder="password"
+          id="password"
+          name="password"
+          value={pass}
+          onChange={(e) => setPass(e.target.value)}
+        />
+        <button className="loginbutton" 
+        onClick={() => {window.location.href='/mainpage'}}
+        type="submit">
+          Login
+        </button>
+        <button
+          className="account"
+          onClick={() => {window.location.href='/register'}}
+        >
+          Don't have an account yet?
+        </button>
+        <button className="guest"
+        onClick={() => {window.location.href='/guest'}}
+        >
+          Continue as a Guest?
+        </button>
+      </form>
+    </>
+  );
+};

@@ -1,29 +1,25 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
-}
-
-.button-container {
-  margin-top: 150px;
+.mainpage {
+  max-width: 100%;
+  background: linear-gradient(to top, #b6e7ff, #06aaff);
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+  align-items: center;
+  min-height: 1020px;
 }
 
-.button {
-  margin-right: 20px; /* Add margin to the right of "Takeaways" button */
-  padding: 20px 60px; /* Increase padding to make button larger */
-  border: none;
-  border-radius: 5px;
-  font-size: 24px; /* Increase font-size to make text larger */
-  font-weight: bold;
-  color: white;
-  background-color: blue;
-  cursor: pointer;
+.button-container{
+  color: white; 
+    background-color: #06aaff; 
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
 }
-
-.button:hover {
-  background-color: #89a8c7; /* Lighter shade of blue when hovered over */
-}
-

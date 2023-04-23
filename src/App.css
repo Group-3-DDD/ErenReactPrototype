@@ -82,6 +82,8 @@
   color: blue;
   text-decoration: underline;
   cursor: pointer;
+  border-radius: 5px; 
+  
 }
 .login-form label, .register-form label, .guest-form label
 {
@@ -94,6 +96,7 @@
   width: 70%;
   font-size: 16px;
   margin-bottom: 10px;
+  border-radius: 5px; 
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.3);
   
 }
@@ -120,5 +123,39 @@
   -shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
 }
 
+.App nav {
+  display: flex;
+  width: 97%;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
 
+.App nav a {
+  margin: 0 50px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  
+}
+
+.App nav a:hover {
+  color: #0077cc;
+}
+
+.description
+{
+  width: 96%;
+  height: 200px;
+  position: felx;
+  background-color: #f7f7f7;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 10px;
+}
 

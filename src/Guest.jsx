@@ -5,7 +5,9 @@ export const Guest =(props) =>{
     const [name, setName] = useState(' ');
 
     const handleSubmit =(e) => {
-        e.preventDeafut();
+        e.preventDefault();
+        console.log(name);
+        window.location.href = "/mainpage";
     }
 
     return(
@@ -15,8 +17,13 @@ export const Guest =(props) =>{
         <img src={accountlogo} alt="account-logo" className="account-logo" />
       
         <label htmlFor="guest">Full Name </label>
-            <input Text={Text}name="name" placeholder="Full Name" id="name" />
-            <button className="continuebutton" onClick={()=>props.onFormSwitch('mainpage')}>Continue</button>
+            <input Text={Text}
+            name="name" 
+            placeholder="Full Name" 
+            id="name" />
+            <button className="continuebutton" type="submit">
+          Contiune
+        </button>
         </form>
         </>
         

@@ -6,18 +6,23 @@ import Takeaway from './Takeaway';
 
 function Mainpage() {
   return (
+    
     <div className="App">
-      <div className="banner"></div>
+     {/* <div className="banner">
+        <img src={logo} alt="Logo" />
+  </div>*/}
       <Routes>
+        <Route path="/" element={
+          <div className="button-container">
+            <button className="button" onClick={() => {window.location.href='/takeaway'}}>Takeaway</button>
+            <button className="button" onClick={() => {window.location.href='/homecooked'}}>Home Cooked</button>
+          </div>
+        } />
         <Route path="/homecooked" element={<HomeCooked />} />
-        <Route path="/takeaways" element={<Takeaway />} />
+        <Route path="/takeaway" element={<Takeaway />} />
       </Routes>
-      <div className="button-container">
-        <Link to="/takeaways" className="button">Takeaways</Link>
-        <Link to="/homecooked" className="button">Home Cooked</Link>
-      </div>
-      
     </div>
+
   );
 }
 
