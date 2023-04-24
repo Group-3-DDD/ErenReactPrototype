@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/ErenReactPrototype/static/css/main.927d93bd.css",
+    "main.js": "/ErenReactPrototype/static/js/main.113b8a66.js",
+    "static/js/787.16ebd171.chunk.js": "/ErenReactPrototype/static/js/787.16ebd171.chunk.js",
+    "static/media/img2.png": "/ErenReactPrototype/static/media/img2.cfc491694ccd7342bb90.png",
+    "static/media/img5.png": "/ErenReactPrototype/static/media/img5.497fcdd060d2e78f58f1.png",
+    "static/media/img4.png": "/ErenReactPrototype/static/media/img4.b3bc642695f40f39849a.png",
+    "static/media/img3.png": "/ErenReactPrototype/static/media/img3.717c4c1dc7b77483c6be.png",
+    "static/media/img20.jpg": "/ErenReactPrototype/static/media/img20.d51555d9e47e137272ea.jpg",
+    "static/media/img7.jpg": "/ErenReactPrototype/static/media/img7.6d1943956049808bb73a.jpg",
+    "static/media/img18.jpg": "/ErenReactPrototype/static/media/img18.f2d47d78833d0c06e370.jpg",
+    "static/media/img6.jpg": "/ErenReactPrototype/static/media/img6.0cc902481a814fdb4c9a.jpg",
+    "static/media/img1.png": "/ErenReactPrototype/static/media/img1.7abfd262f7af1771a19c.png",
+    "static/media/img19.jpg": "/ErenReactPrototype/static/media/img19.b3073b90061dfe34634a.jpg",
+    "static/media/logo transparent.png": "/ErenReactPrototype/static/media/logo transparent.bcaecd43c4486dacbf52.png",
+    "static/media/img14.jpg": "/ErenReactPrototype/static/media/img14.4484b0fca3fe8b794960.jpg",
+    "static/media/img8.jpg": "/ErenReactPrototype/static/media/img8.5438fae04b813e000578.jpg",
+    "static/media/img10.jpg": "/ErenReactPrototype/static/media/img10.10135f9d9ddacc7885fc.jpg",
+    "static/media/img13.jpg": "/ErenReactPrototype/static/media/img13.3bd03ff2b8ad71644561.jpg",
+    "static/media/img12.jpg": "/ErenReactPrototype/static/media/img12.1427898b90b4a68fc49f.jpg",
+    "static/media/img17.jpg": "/ErenReactPrototype/static/media/img17.16fb7babd1e82f61933d.jpg",
+    "static/media/img11.jpg": "/ErenReactPrototype/static/media/img11.e5f7db6dc9112bddb8a8.jpg",
+    "static/media/img9.jpg": "/ErenReactPrototype/static/media/img9.8b2435a02dd967f318e9.jpg",
+    "static/media/img15.jpg": "/ErenReactPrototype/static/media/img15.3885fe61c1e2db676156.jpg",
+    "static/media/img16.jpg": "/ErenReactPrototype/static/media/img16.c9eb8324cba6d94df1e2.jpg",
+    "static/media/accountlogo.png": "/ErenReactPrototype/static/media/accountlogo.588f008ab1656d755480.png",
+    "index.html": "/ErenReactPrototype/index.html",
+    "main.927d93bd.css.map": "/ErenReactPrototype/static/css/main.927d93bd.css.map",
+    "main.113b8a66.js.map": "/ErenReactPrototype/static/js/main.113b8a66.js.map",
+    "787.16ebd171.chunk.js.map": "/ErenReactPrototype/static/js/787.16ebd171.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.927d93bd.css",
+    "static/js/main.113b8a66.js"
+  ]
+}
