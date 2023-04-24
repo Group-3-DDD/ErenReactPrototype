@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './mainpage.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomeCooked from './HomeCooked';
 import Takeaway from './Takeaway';

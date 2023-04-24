@@ -7,7 +7,7 @@ export const Guest =(props) =>{
     const handleSubmit =(e) => {
         e.preventDefault();
         console.log(name);
-        window.location.href = "/mainpage";
+        
     }
 
     return(
@@ -21,8 +21,22 @@ export const Guest =(props) =>{
             name="name" 
             placeholder="Full Name" 
             id="name" />
-            <button className="continuebutton" type="submit">
+            <button className="continuebutton" 
+            onClick={() => {window.location.href='/mainpage'}}
+            type="submit">
           Contiune
+        </button>
+        <button
+          className="account"
+          onClick={() => {window.location.href='/login'}}
+        >
+         Already have an account?
+        </button>
+         <button
+          className="account"
+          onClick={() => {window.location.href='/register'}}
+        >
+          Don't have an account yet?
         </button>
         </form>
         </>

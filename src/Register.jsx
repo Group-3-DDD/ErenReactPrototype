@@ -4,6 +4,7 @@ import accountlogo from './accountlogo.png';
 export const Register = (props) => {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const [name, setName] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,11 +16,15 @@ return (
       <form className="register-form" onSubmit={handleSubmit}>
         <img src={accountlogo} alt="account-logo" className="account-logo" />
 
-        <label htmlFor="guest">Full Name </label>
-        <input Text={Text}
-        name="name" 
-        placeholder="Full Name" 
-        id="name" />
+        <label htmlFor="name">Name</label>
+        <input
+          type="text"
+          placeholder="Your Full Name"
+          id="name"
+          name="name"
+          value={name}
+          
+        />
 
         <label htmlFor="email">Email </label>
         <input
