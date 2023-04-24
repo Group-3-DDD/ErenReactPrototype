@@ -5,7 +5,7 @@ import { Login } from './Login';
 import { Register } from './Register';
 import { Guest } from './Guest';
 import logo from './logo transparent.png';
-import Mainpage from './mainpage';
+import Mainpage from './Mainpage';
 import HomeCooked from './HomeCooked';
 import Takeaway from './Takeaway';
 import AliceCarousel from 'react-alice-carousel';
@@ -22,11 +22,15 @@ function App() {
 
  
   const showLinks = window.location.pathname === "/";
+  const showlogo = window.location.pathname !== "/mainpage";
   return (
     
     <Router>
       <div className="App">
-        <img src={logo} alt="logo transparent" className="logo transparent" />
+      {showlogo ? (
+      <img src={logo} alt="logo transparent" className="logo transparent" />
+      ) : null}
+        
         
         {showLinks && (
           <nav>

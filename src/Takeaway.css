@@ -1,20 +1,23 @@
 .takeaway-container {
   padding: 20px;
 }
-
+.logo {
+  display: block;
+  margin: 0 auto;
+}
 .return-button {
   position: absolute;
   top: 0;
   left: 0;
   padding: 1rem;
   font-size: 1.5rem;
-  color: #fff;
+  color: #ffff;
   text-decoration: none;
 }
 
 .return-button:hover {
-  color: #fff;
-  background-color: #000;
+  color: #ffff;
+  text-decoration-color: #edf9ff;
 }
 
 .header {
@@ -44,6 +47,7 @@
   width: 300px;
   margin: 1rem;
   border: 1px solid #ddd;
+  background-color: #edf9ff;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -62,6 +66,7 @@
 
 .takeaway-info {
   padding: 1rem;
+  background-color: #edf9ff;
 }
 
 .takeaway-info h2 {
@@ -76,4 +81,7 @@
   .takeaway-card {
     width: 100%;
   }
+}
+a {
+  text-decoration: none;
 }
