@@ -5,7 +5,9 @@ import { Login } from './Login';
 import { Register } from './Register';
 import { Guest } from './Guest';
 import logo from './logo transparent.png';
-import Mainpage from './Mainpage';
+import Mainpage from './mainpage';
+import HomeCooked from './HomeCooked';
+import Takeaway from './Takeaway';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 import image1 from './img1.png';
@@ -39,6 +41,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/guest" element={<Guest />} />
           <Route path="/mainpage" element={<Mainpage />} />
+          <Route path="/homecooked" element={<HomeCooked />} />
+          <Route path="/takeaway" element={<Takeaway />} />
         </Routes>
         {showLinks && (
         <div className='container'>
