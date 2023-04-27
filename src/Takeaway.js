@@ -11,11 +11,11 @@ import img19 from './img19.jpg';
 import img20 from './img20.jpg';
 
 function Takeaway() {
-  const [searchText, setSearchText] = useState('');
-  const [suggestions, setSuggestions] = useState([]);
-
+  const [searchText, setSearchText] = useState(''); // statevariable to track search input
+  const [suggestions, setSuggestions] = useState([]);// state variable to track suggested 
+// food type array
   const foodTypes = ['pizza', 'burger', 'sushi', 'tacos', 'vegies','chicken','fastfood','fries','drinks','halal','indian'];
-
+// takeaway array
   const [takeaways, setTakeaways] = useState([
     {
       id: 1,
@@ -63,21 +63,24 @@ function Takeaway() {
       link:'https://www.just-eat.co.uk/restaurants-alachi-hull/menu'
     },
   ]);
-
-  useEffect(() => {
+// useeffect hook, updates takeaway list and suggestion list on search
+  useEffect(() => {//check if empty 
     if (searchText !== '') {
       const regex = new RegExp(`^${searchText}`, 'i');
-      setSuggestions(foodTypes.filter(foodType => regex.test(foodType)));
+      //match string with whats typed
+      // filter array to match search text, set array as suggestion
+      setSuggestions(foodTypes.filter(foodType => regex.test(foodType))); // filter takeaways array to match search and keywords, set array as takeaway
       setTakeaways(takeaways.filter(takeaway => {
-        const keywords = takeaway.keywords || []; 
+        const keywords = takeaway.keywords || []; // handle case where keywords are not defined
         return regex.test(takeaway.name) || keywords.some(keyword => regex.test(keyword));
       }));
     } else {
-      setSuggestions([]);
-      setTakeaways(takeaways); 
+     // reset suggestions and takeaways to original on search bar empty
+     setSuggestions([]);
+     setTakeaways(takeaways); // reset the takeaways state to its initial value when the search text is empty
     }
   }, [searchText]);
-
+//useeffect hook to update suggestion list on search input
   useEffect(() => {
     if (searchText !== '') {
       const regex = new RegExp(`^${searchText}`, 'i');
@@ -85,12 +88,13 @@ function Takeaway() {
     } else {
       setSuggestions([]);
     }
-  }, [searchText]);
+  }, [searchText]);//when searchtext changes trigger
+  //search input change
 
   const handleSearchChange = e => {
-    const keyword = e.target.value.toLowerCase();
-    setSearchText(keyword);
-    if (keyword !== '') {
+    const keyword = e.target.value.toLowerCase();//new varaible is whats searched
+    setSearchText(keyword);//update search text state with keyword
+    if (keyword !== '') {//check if empty
       setTakeaways(
         takeaways.filter(takeaway =>
           takeaway.keywords.some(
@@ -158,7 +162,7 @@ function Takeaway() {
     
     <div className="takeaway-container">
       <Link to="/mainpage" className="return-button">Return</Link>
-      <img src={logo} alt="logo transparent" className="logo transparent" />
+      
       <h1>Takeaway Page</h1>
       <div className="search-container">
       <Link to="/mainpage" className="return-button">Return</Link>
@@ -171,6 +175,9 @@ function Takeaway() {
             <InputAdornment position="end">
               <SearchIcon />
             </InputAdornment>
+              //aniluom (2022) React mui input adornment API, GeeksforGeeks. 
+            //Available at: https://www.geeksforgeeks.org/react-mui-inputadornment-api/.  
+            //[online] [Accessed: April 20, 2023].
           }
         />
         {suggestions.length > 0 && (

@@ -10,7 +10,7 @@ function mainpage() {
       <div className="mainpage">
         
       <div className='containermain'>
-      <img src={logomain} className="logomain" />
+     
         <Routes>
           <Route path="/" element={
             <div className="button-container">

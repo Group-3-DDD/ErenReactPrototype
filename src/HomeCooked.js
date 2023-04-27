@@ -253,7 +253,7 @@ function HomeCooked() {
     
     <div className="takeaway-container">
       <Link to="/mainpage" className="return-button">Return</Link>
-      <img src={logo} alt="logo transparent" className="logo transparent" />
+      
       <h1>Home Cooked Meals Page</h1>
       <div className="search-container">
       <Link to="/mainpage" className="return-button">Return</Link>

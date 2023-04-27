@@ -1,5 +1,7 @@
+//https://youtu.be/Y-XW9m8qOis
 import React,{useState} from "react"
 import accountlogo from './accountlogo.png';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export const Guest =(props) =>{
     const [name, setName] = useState(' ');
@@ -11,7 +13,8 @@ export const Guest =(props) =>{
     }
 
     return(
-        <>
+        <Routes>
+        <Route path="/" element={
         <form className="guest-form" onSubmit={handleSubmit}>
         
         <img src={accountlogo} alt="account-logo" className="account-logo" />
@@ -21,25 +24,18 @@ export const Guest =(props) =>{
             name="name" 
             placeholder="Full Name" 
             id="name" />
-            <button className="continuebutton" 
-            onClick={() => {window.location.href='/mainpage'}}
-            type="submit">
-          Contiune
-        </button>
-        <button
-          className="account"
-          onClick={() => {window.location.href='/login'}}
-        >
-         Already have an account?
-        </button>
-         <button
-          className="account"
-          onClick={() => {window.location.href='/register'}}
-        >
-          Don't have an account yet?
-        </button>
+            <Link to="/mainpage" className="continuebutton">
+              Continue
+            </Link>
+            <Link className="account" to="/login">
+        Already have an account?
+      </Link>
+         <Link to="/register" className="account">
+              Don't have an account yet?
+            </Link>
         </form>
-        </>
+        } />
+      </Routes>
         
     )
 }
